@@ -1,9 +1,9 @@
 from fields.core.app import app, config
-from fields.core import App
+from fields.core import Fields
 
 import os
 
-runtime = App(app, os.path.dirname(os.path.realpath(__file__)))
+fields = Fields(app, os.path.dirname(os.path.realpath(__file__)))
 
 if __name__ == "__main__":
-    runtime.run(config)
+    fields.run(config)
