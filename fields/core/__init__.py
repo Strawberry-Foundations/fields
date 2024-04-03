@@ -1,10 +1,16 @@
+import os.path
+
 from flask import Flask
+from fields import server_dir
+
+import yaml
 
 
 class Fields:
-    def __init__(self, flask_app: Flask, main_path: str):
-        self.app = flask_app
-        self.main_path = main_path
+    def __init__(self):
+        self.main_path = os.path.dirname(server_dir)
 
-    def run(self, config):
+        self.app = Flask(__name__)
+
+    def run(self):
         pass
