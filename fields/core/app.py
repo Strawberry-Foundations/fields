@@ -1,5 +1,8 @@
 from fields.core.config import config
 from fields.utils.secret import load_secret
+
+from fields.routes.index import index
+
 from flask import Flask
 
 app = Flask(
@@ -10,3 +13,5 @@ app = Flask(
 )
 
 app.config["SECRET_KEY"] = load_secret()
+
+app.add_url_rule("/", view_func=index)
