@@ -6,8 +6,8 @@ import json
 
 
 class Languages(Enum):
-    GERMAN = "de-de"
-    ENGLISH = "en-us"
+    GERMAN = "de_DE"
+    ENGLISH = "en_US"
 
 
 class Locale:
@@ -32,16 +32,14 @@ class Strings:
         self.language = lang
 
     def load(self, string: str):
-        lo_string = None
+        lo_string: dict
 
         match self.language:
-            case "de-de": lo_string = locales.de_DE
-            case "en-us": lo_string = locales.en_US
+            case Languages.GERMAN: lo_string = locales.de_DE
+            case Languages.ENGLISH: lo_string = locales.en_US
             case _: lo_string = locales.en_US
 
-        string = lo_string[string]
-
-        return string
+        return lo_string[string]
 
 
 def get_preferred_language():
@@ -53,7 +51,7 @@ def get_preferred_language():
         preferred_language = languages[0].split(';')[0].lower()
 
         match preferred_language:
-            case "de-de": return Languages.GERMAN.value
-            case "en-us": return Languages.ENGLISH.value
+            case "de-de": return Languages.GERMAN
+            case "en-us": return Languages.ENGLISH
 
     return None
