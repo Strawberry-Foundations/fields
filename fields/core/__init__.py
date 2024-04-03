@@ -2,15 +2,18 @@ import os.path
 
 from flask import Flask
 from fields import server_dir
-
-import yaml
+from fields.core.config import config
 
 
 class Fields:
-    def __init__(self):
+    def __init__(self, flask_app: Flask):
         self.main_path = os.path.dirname(server_dir)
-
-        self.app = Flask(__name__)
+        self.app = flask_app
 
     def run(self):
-        pass
+        self.app.run(
+            host=config.address,
+            port=config.port,
+            debug=config.debug_mode,
+            threaded=config.threaded
+        )
