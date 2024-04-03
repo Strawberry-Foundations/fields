@@ -1,7 +1,4 @@
+from fields.core.config import config
 from flask import Flask
 
-from fields.core import config
-
-app = Flask(
-    __name__,
-)
+app = Flask(__name__)
