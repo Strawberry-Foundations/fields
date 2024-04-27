@@ -1,1 +1,25 @@
 {% extends "base/base.html" %}
+{% block content %}
+<div class="sidebar">
+  <center>
+  </center>
+</div>
+
+<div class="content">
+  <h2 class="title">{{ strings.load("welcome") }}</h2>
+  <h4 class="subtitle">{{ strings.load("subtitle") }}</h4>
+  <hr style="margin-right: 40px">
+
+  <div class="box">
+    <center>
+      <h3>{{ strings.load("new_builds") }}</h3>
+    </center>
+  </div>
+
+  <div class="box box-failed">
+    <center>
+      <h3>{{ strings.load("failed_builds") }}</h3>
+    </center>
+  </div>
+</div>
+{% endblock content %}

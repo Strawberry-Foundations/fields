@@ -1,4 +1,8 @@
 {
   "title": "Title",
-  "welcome": "Welcome"
+  "main_page": "Main page",
+  "welcome": "Welcome",
+  "subtitle": "Fields » Main page",
+  "new_builds": "New builds",
+  "failed_builds": "New builds"
 }

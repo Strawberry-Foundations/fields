@@ -7,5 +7,6 @@ async def index():
     strings = Strings(language)
 
     return render_template("index.html", **{
-        "strings": strings
+        "strings": strings,
+        "title": strings.load("main_page")
     })

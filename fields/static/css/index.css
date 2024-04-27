@@ -1,0 +1,49 @@
+.title {
+    font-family: 'Angkor', serif;
+    font-weight: 100;
+}
+
+.subtitle {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 100;
+}
+
+.content {
+    margin-left: 340px;
+    font-family: 'Rubik', sans-serif;
+}
+
+.box {
+    margin-top: 50px;
+    height: 400px !important;
+    width: 400px !important;
+    background-color: #242729 !important;
+    border-radius: 25px !important;
+    border: 1px solid #575D62 !important;
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.1), 0 17px 50px 0 rgba(0, 0, 0, 0.19) !important;
+}
+
+.box * {
+    font-family: 'Rubik', sans-serif;
+}
+
+.box-failed {
+    position: absolute !important;
+    margin-top: -402px !important;
+    margin-left: 450px;
+    background-color: #343029 !important;
+}
+
+.sidebar {
+    width: 300px;
+    background-color: rgb(21, 22, 22);
+    position: fixed !important;
+    top: 65px;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    display: block;
+    padding: 15px 0;
+    overflow: auto;
+    border-right: 1px solid #575D62;
+}
