@@ -47,3 +47,52 @@
     overflow: auto;
     border-right: 1px solid #575D62;
 }
+
+.sidebar--spacer {
+    margin-top: 35px;
+}
+  
+.sidebar--button {
+    right: 0px !important;
+    width: 268px !important;
+    height: 35px !important;
+    color: white !important;
+    text-decoration: none !important;
+    background-color: rgb(21, 22, 22) !important;
+    text-transform: none !important;
+    font-weight: bold !important;
+    border-radius: 0px !important;
+}
+  
+.sidebar--button:hover {
+    -webkit-transition-duration: 0.5s !important;
+    transition-duration: 0.5s !important;
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19) !important;
+    background-color: rgb(51, 52, 52) !important;
+}
+
+.sidebar--button-active:hover {
+    background-color: #3073AD !important;
+    box-shadow: 0 12px 16px 0 #0000003d, 0 17px 50px 0 rgba(0, 0, 0, 0.19) !important;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.24) !important;
+    background-color: #74B7EF  !important;
+}
+
+.sidebar--button-active {
+    background-color: #3073AD !important;
+    box-shadow: 0 12px 16px 0 #0000003d, 0 17px 50px 0 rgba(0, 0, 0, 0.19) !important;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.24) !important;
+}
+  
+.sidebar--button p {
+    font-weight: bold;
+    position: absolute;
+    top: 5px;
+    left: 70px
+}
+  
+.sidebar--button--icon {
+    position: absolute;
+    top: 5px;
+    left: 30px
+}

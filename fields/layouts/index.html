@@ -1,7 +1,29 @@
 {% extends "base/base.html" %}
 {% block content %}
+<script src="/static/js/tab.js"></script>
+
 <div class="sidebar">
   <center>
+    <a onclick="toggleActive(this)" class="mdl-button mdl-js-button sidebar--button sidebar--button-active" id="inbox-btn" href="/">
+      <span class="material-symbols-outlined sidebar--button--icon">start</span>
+      <p>{{ strings.load("main_page") }}</p>
+    </a>
+    <a onclick="toggleActive(this)" class="mdl-button mdl-js-button sidebar--button" id="drafts-btn">
+      <span class="material-symbols-outlined sidebar--button--icon">drafts</span>
+      <p>{{ strings.load("main_page") }}</p>
+    </a>
+    <a onclick="toggleActive(this)" class="mdl-button mdl-js-button sidebar--button" id="sent-btn">
+      <span class="material-symbols-outlined sidebar--button--icon">send</span>
+      <p>{{ strings.load("main_page") }}</p>
+    </a>
+    <a onclick="toggleActive(this)" class="mdl-button mdl-js-button sidebar--button" id="marked-btn">
+      <span class="material-symbols-outlined sidebar--button--icon">label</span>
+      <p>{{ strings.load("main_page") }}</p>
+    </a>
+    <a onclick="toggleActive(this)" class="mdl-button mdl-js-button sidebar--button" id="trash-btn">
+      <span class="material-symbols-outlined sidebar--button--icon">delete</span>
+      <p>{{ strings.load("main_page") }}</p>
+    </a>
   </center>
 </div>
 
@@ -10,7 +32,7 @@
   <h4 class="subtitle">{{ strings.load("subtitle") }}</h4>
   <hr style="margin-right: 40px">
 
-  <div class="box">
+  <!-- <div class="box">
     <center>
       <h3>{{ strings.load("new_builds") }}</h3>
     </center>
@@ -20,6 +42,6 @@
     <center>
       <h3>{{ strings.load("failed_builds") }}</h3>
     </center>
-  </div>
+  </div> -->
 </div>
 {% endblock content %}
