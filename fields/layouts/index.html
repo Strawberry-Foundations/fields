@@ -4,23 +4,24 @@
 
 <div class="sidebar">
   <center>
-    <a onclick="toggleActive(this)" class="mdl-button mdl-js-button sidebar--button sidebar--button-active" id="inbox-btn" href="/">
+    <a onclick="toggleActive(this)" class="mdl-button mdl-js-button sidebar--button sidebar--button-active" href="/">
       <span class="material-symbols-outlined sidebar--button--icon">home</span>
       <p>{{ strings.load("main_page") }}</p>
     </a>
-    <a onclick="toggleActive(this)" class="mdl-button mdl-js-button sidebar--button" id="drafts-btn">
+    <a onclick="toggleActive(this)" class="mdl-button mdl-js-button sidebar--button" href="/projects/all/builds/">
       <span class="material-symbols-outlined sidebar--button--icon">experiment</span>
       <p>{{ strings.load("build_status") }}</p>
     </a>
-    <a onclick="toggleActive(this)" class="mdl-button mdl-js-button sidebar--button" id="sent-btn">
+    <a onclick="toggleActive(this)" class="mdl-button mdl-js-button sidebar--button" href="/projects/all/releases">
       <span class="material-symbols-outlined sidebar--button--icon">release_alert</span>
       <p>{{ strings.load("releases") }}</p>
     </a>
-    <a onclick="toggleActive(this)" class="mdl-button mdl-js-button sidebar--button" id="marked-btn">
+    <a onclick="toggleActive(this)" class="mdl-button mdl-js-button sidebar--button" href="/admin/">
       <span class="material-symbols-outlined sidebar--button--icon">admin_panel_settings</span>
       <p>{{ strings.load("admin_settings") }}</p>
     </a>
-    <a onclick="toggleActive(this)" class="mdl-button mdl-js-button sidebar--button" id="trash-btn">
+    <a onclick="toggleActive(this)" class="mdl-button mdl-js-button sidebar--button" href="/projects/+
+    all/code">
       <span class="material-symbols-outlined sidebar--button--icon">code</span>
       <p>{{ strings.load("browse_code") }}</p>
     </a>
