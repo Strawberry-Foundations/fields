@@ -4,5 +4,10 @@
   "welcome": "Welcome",
   "subtitle": "Fields » Main page",
   "new_builds": "New builds",
-  "failed_builds": "New builds"
+  "failed_builds": "New builds",
+
+  "build_status": "Build status",
+  "releases": "Releases",
+  "admin_settings": "Admin settings",
+  "browse_code": "Source code management"
 }

@@ -43,7 +43,6 @@
     left: 0;
     z-index: 1000;
     display: block;
-    padding: 15px 0;
     overflow: auto;
     border-right: 1px solid #575D62;
 }
@@ -55,7 +54,7 @@
 .sidebar--button {
     right: 0px !important;
     width: 268px !important;
-    height: 35px !important;
+    height: 40px !important;
     color: white !important;
     text-decoration: none !important;
     background-color: rgb(21, 22, 22) !important;
@@ -87,12 +86,12 @@
 .sidebar--button p {
     font-weight: bold;
     position: absolute;
-    top: 5px;
+    top: 7.5px;
     left: 70px
 }
   
 .sidebar--button--icon {
     position: absolute;
-    top: 5px;
+    top: 7.5px;
     left: 30px
 }
