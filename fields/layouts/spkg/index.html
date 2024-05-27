@@ -1,0 +1,51 @@
+{% extends "base/base.html" %}
+{% block content %}
+<script src="/static/js/tab.js"></script>
+
+<div class="sidebar">
+  <center>
+    <a onclick="toggleActive(this)" class="mdl-button mdl-js-button sidebar--button" href="/">
+      <span class="material-symbols-outlined sidebar--button--icon">home</span>
+      <p>{{ strings.load("main_page") }}</p>
+    </a>
+    <a onclick="toggleActive(this)" class="mdl-button mdl-js-button sidebar--button" href="/projects/all/builds/">
+      <span class="material-symbols-outlined sidebar--button--icon">experiment</span>
+      <p>{{ strings.load("build_status") }}</p>
+    </a>
+    <a onclick="toggleActive(this)" class="mdl-button mdl-js-button sidebar--button" href="/projects/all/releases">
+      <span class="material-symbols-outlined sidebar--button--icon">release_alert</span>
+      <p>{{ strings.load("releases") }}</p>
+    </a>
+    <a onclick="toggleActive(this)" class="mdl-button mdl-js-button sidebar--button" href="/admin/">
+      <span class="material-symbols-outlined sidebar--button--icon">admin_panel_settings</span>
+      <p>{{ strings.load("admin_settings") }}</p>
+    </a>
+    <a onclick="toggleActive(this)" class="mdl-button mdl-js-button sidebar--button sidebar--button-active" href="/packages">
+      <span class="material-symbols-outlined sidebar--button--icon">package_2</span>
+      <p>{{ strings.load("spkg_browser") }}</p>
+    </a>
+    <a onclick="toggleActive(this)" class="mdl-button mdl-js-button sidebar--button" href="/projects/all/code">
+      <span class="material-symbols-outlined sidebar--button--icon">code</span>
+      <p>{{ strings.load("browse_code") }}</p>
+    </a>
+  </center>
+</div>
+
+<div class="content">
+  <h2 class="title">{{ strings.load("packages") }}</h2>
+  <h4 class="subtitle">Fields » {{ strings.load("spkg_browser") }}</h4>
+  <hr style="margin-right: 40px">
+
+  <!-- <div class="box">
+    <center>
+      <h3>{{ strings.load("new_builds") }}</h3>
+    </center>
+  </div>
+
+  <div class="box box-failed">
+    <center>
+      <h3>{{ strings.load("failed_builds") }}</h3>
+    </center>
+  </div> -->
+</div>
+{% endblock content %}
