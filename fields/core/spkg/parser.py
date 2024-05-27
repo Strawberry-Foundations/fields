@@ -34,3 +34,4 @@ def read(file_path):
 
                 data[section][key.strip()] = value.strip()
 
+    return data
