@@ -9,5 +9,7 @@
   "build_status": "Build Status",
   "releases": "Veröffentlichungen",
   "admin_settings": "Administratoreinstellungen",
-  "browse_code": "Source-Code Verwaltung"
+  "browse_code": "Source-Code Verwaltung",
+
+  "projects": "Projekte"
 }
