@@ -11,5 +11,6 @@
   "spkg_browser" : "Spkg package browser",
   "browse_code": "Source code browser",
 
-  "projects": "Projects"
+  "projects": "Projects",
+  "packages": "Packages"
 }
