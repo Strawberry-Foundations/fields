@@ -2,14 +2,14 @@
   "title": "Title",
   "main_page": "Main page",
   "welcome": "Welcome",
-  "subtitle": "Fields » Main page",
   "new_builds": "New builds",
   "failed_builds": "New builds",
 
   "build_status": "Build status",
   "releases": "Releases",
   "admin_settings": "Admin settings",
-  "browse_code": "Source code management",
+  "spkg_browser" : "Spkg package browser",
+  "browse_code": "Source code browser",
 
   "projects": "Projects"
 }
