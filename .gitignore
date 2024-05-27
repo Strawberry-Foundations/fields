@@ -161,3 +161,4 @@ cython_debug/
 
 # Fields-specific files
 secret.key
+/fields_data
