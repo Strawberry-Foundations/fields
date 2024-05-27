@@ -1,0 +1,39 @@
+{% extends "base/base.html" %}
+{% block content %}
+<script src="/static/js/tab.js"></script>
+
+<div class="sidebar">
+  <center>
+    <a onclick="toggleActive(this)" class="mdl-button mdl-js-button sidebar--button" href="/">
+      <span class="material-symbols-outlined sidebar--button--icon">home</span>
+      <p>{{ strings.load("main_page") }}</p>
+    </a>
+    <a onclick="toggleActive(this)" class="mdl-button mdl-js-button sidebar--button" href="/projects/all/builds/">
+      <span class="material-symbols-outlined sidebar--button--icon">experiment</span>
+      <p>{{ strings.load("build_status") }}</p>
+    </a>
+    <a onclick="toggleActive(this)" class="mdl-button mdl-js-button sidebar--button" href="/projects/all/releases">
+      <span class="material-symbols-outlined sidebar--button--icon">release_alert</span>
+      <p>{{ strings.load("releases") }}</p>
+    </a>
+    <a onclick="toggleActive(this)" class="mdl-button mdl-js-button sidebar--button" href="/admin/">
+      <span class="material-symbols-outlined sidebar--button--icon">admin_panel_settings</span>
+      <p>{{ strings.load("admin_settings") }}</p>
+    </a>
+    <a onclick="toggleActive(this)" class="mdl-button mdl-js-button sidebar--button sidebar--button-active" href="/projects/all/code">
+      <span class="material-symbols-outlined sidebar--button--icon">code</span>
+      <p>{{ strings.load("browse_code") }}</p>
+    </a>
+  </center>
+</div>
+
+<div class="content">
+  <h2 class="title">{{ strings.load("projects") }}</h2>
+  <h4 class="subtitle">Fields » {{ strings.load("browse_code") }}</h4>
+  <hr style="margin-right: 40px">
+
+  {% for dir in source_dirs %}
+  <a class="mdl-button mdl-js-button sidebar--button" href="/projects/{{ dir }}/code"><li>{{ dir }}</li></a><br>
+  {% endfor %}
+</div>
+{% endblock content %}
