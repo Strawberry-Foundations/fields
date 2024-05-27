@@ -2,11 +2,13 @@
 
 /* Main Content */
 .main-dark {
+    margin-top: 100px !important;
     background-color: #242729;
     color: white;
 }
 
 .main-white {
+    margin-top: 100px !important;
     background-color: white;
     color: white;
 }
