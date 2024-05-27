@@ -36,16 +36,14 @@
   <h4 class="subtitle">Fields » {{ strings.load("spkg_browser") }}</h4>
   <hr style="margin-right: 40px">
 
-  <div class="box">
-    <center>
-      <h3>{{ strings.load("new_builds") }}</h3>
-    </center>
-  </div>
-
-  <div class="box box-failed">
-    <center>
-      <h3>{{ strings.load("failed_builds") }}</h3>
-    </center>
-  </div>
+  {% for package in packages %}
+    <div class="box box-small">
+      <center>
+        <h4><b>{{ package.Meta.Id }} {{ package.Meta.Version }}</b></h4>
+        <hr width="90%">
+        <p>{{ package.Meta.Description }}</p>
+      </center>
+    </div>
+  {% endfor %}
 </div>
 {% endblock content %}
